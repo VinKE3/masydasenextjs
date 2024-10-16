@@ -72,11 +72,37 @@ const Header: React.FC<HeaderProps> = ({ variant }) => {
                           </li>
                           <li>
                             <Link
-                              href="#vps"
+                              href="#liquidacion-compras"
                               onClick={() => setMobileToggle(false)}
                             >
-                              VPS
+                              Liquidaciones de compra
                             </Link>
+                          </li>
+                          <li className="menu-item-has-children">
+                            <Link
+                              href="#sistema-guias-remision"
+                              onClick={() => setMobileToggle(false)}
+                            >
+                              Sist. Guías de Remisión
+                            </Link>
+                            <SubDropDown>
+                              <li>
+                                <Link
+                                  href="#guias-transportistas"
+                                  onClick={() => setMobileToggle(false)}
+                                >
+                                  Sistema web de guías de transportistas
+                                </Link>
+                              </li>
+                              <li>
+                                <Link
+                                  href="#guias-remision"
+                                  onClick={() => setMobileToggle(false)}
+                                >
+                                  Sistema web de guías de remisión
+                                </Link>
+                              </li>
+                            </SubDropDown>
                           </li>
                           <li className="menu-item-has-children">
                             <Link
@@ -104,60 +130,35 @@ const Header: React.FC<HeaderProps> = ({ variant }) => {
                               </li>
                             </SubDropDown>
                           </li>
-                          <li className="menu-item-has-children">
+
+                          <li>
                             <Link
-                              href="#guias-electronicas"
+                              href="#vps"
                               onClick={() => setMobileToggle(false)}
                             >
-                              Guiás Electronicas
+                              VPS
                             </Link>
-                            <SubDropDown>
-                              <li>
-                                <Link
-                                  href="#liquidaciones-compra"
-                                  onClick={() => setMobileToggle(false)}
-                                >
-                                  Liquidaciones de compra
-                                </Link>
-                              </li>
-                              <li>
-                                <Link
-                                  href="#sistema-guia-transportista"
-                                  onClick={() => setMobileToggle(false)}
-                                >
-                                  Sistema Web de guiás de transportista
-                                </Link>
-                              </li>
-                              <li>
-                                <Link
-                                  href="#sistema-guia-remision"
-                                  onClick={() => setMobileToggle(false)}
-                                >
-                                  Sistema Web de guiás de remisión
-                                </Link>
-                              </li>
-                            </SubDropDown>
+                          </li>
+                          <li>
+                            <Link
+                              href="#outsourcing"
+                              onClick={() => setMobileToggle(false)}
+                            >
+                              Outsourcing Contable
+                            </Link>
+                          </li>
+                          <li>
+                            <Link
+                              href="#desarrollo-web"
+                              onClick={() => setMobileToggle(false)}
+                            >
+                              Desarrollo Web
+                            </Link>
                           </li>
                         </ul>
                       </DropDown>
                     </li>
 
-                    <li>
-                      <Link
-                        href="#outsourcing"
-                        onClick={() => setMobileToggle(false)}
-                      >
-                        Outsourcing Contable
-                      </Link>
-                    </li>
-                    <li>
-                      <Link
-                        href="#desarrollo-web"
-                        onClick={() => setMobileToggle(false)}
-                      >
-                        Desarrollo Web
-                      </Link>
-                    </li>
                     <li>
                       <Link
                         href="#contacto"
