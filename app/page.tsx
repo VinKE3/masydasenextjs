@@ -1,32 +1,9 @@
 "use client";
 import FunFact from "@/components/FunFact/FunFact";
-
-import Hero2 from "@/components/Hero/Hero2";
+import Hero from "@/components/Hero/Hero";
 
 import { useEffect } from "react";
 export default function Home() {
-  const heroData = [
-    {
-      title: "Wedding",
-      imageUrl: "./images/wedding.jpeg",
-      href: "/service/service-details",
-    },
-    {
-      title: "Fashion",
-      imageUrl: "./images/fashion.jpeg",
-      href: "/service/service-details",
-    },
-    {
-      title: "Commercial",
-      imageUrl: "./images/commercial.jpeg",
-      href: "/service/service-details",
-    },
-    {
-      title: "Landscape",
-      imageUrl: "./images/landscape.jpeg",
-      href: "/service/service-details",
-    },
-  ];
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
@@ -48,9 +25,28 @@ export default function Home() {
       factNumber: "550",
     },
   ];
+  const heroSocialLinks = [
+    {
+      name: "Behance",
+      links: "/",
+    },
+    {
+      name: "Twitter",
+      links: "/",
+    },
+  ];
   return (
     <>
-      <Hero2 data={heroData} phoneNumber="+044 546664" email="info@arino.com" />
+      <Hero
+        title="Creativity In <br/>Our Blood Line"
+        subtitle="We deliver best problem solving solution for our client and provide finest finishing product in present and upcoming future."
+        btnText="Get a Quote"
+        btnLink="/contact"
+        scrollDownId="#service"
+        socialLinksHeading="Follow Us"
+        heroSocialLinks={heroSocialLinks}
+        bgImageUrl="/images/hero_bg.jpeg"
+      />
       <div className="container">
         <FunFact
           variant="cs-type1"
