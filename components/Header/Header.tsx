@@ -36,7 +36,7 @@ const Header: React.FC<HeaderProps> = ({ variant }) => {
             <Div className="cs-main_header_in">
               <Div className="cs-main_header_left">
                 <Link className="cs-site_branding" href="/">
-                  <img src="/images/logo.svg" alt="Logo" />
+                  <img src="/images/logo/logo2.png" alt="Logo" />
                 </Link>
               </Div>
               <Div className="cs-main_header_center">
@@ -62,14 +62,33 @@ const Header: React.FC<HeaderProps> = ({ variant }) => {
                       </Link>
                       <DropDown>
                         <ul>
-                          <li>
+                          <li className="menu-item-has-children">
                             <Link
-                              href="#utilcon"
+                              href="#sistema-estandar"
                               onClick={() => setMobileToggle(false)}
                             >
-                              Utilcon
+                              F. Electrónica
                             </Link>
+                            <SubDropDown>
+                              <li>
+                                <Link
+                                  href="#sistema-estandar"
+                                  onClick={() => setMobileToggle(false)}
+                                >
+                                  Sistema Estandar
+                                </Link>
+                              </li>
+                              <li>
+                                <Link
+                                  href="#sistema-medida"
+                                  onClick={() => setMobileToggle(false)}
+                                >
+                                  Sistema a medida
+                                </Link>
+                              </li>
+                            </SubDropDown>
                           </li>
+
                           <li>
                             <Link
                               href="#liquidacion-compras"
@@ -104,33 +123,6 @@ const Header: React.FC<HeaderProps> = ({ variant }) => {
                               </li>
                             </SubDropDown>
                           </li>
-                          <li className="menu-item-has-children">
-                            <Link
-                              href="#sistema-estandar"
-                              onClick={() => setMobileToggle(false)}
-                            >
-                              F. Electrónica
-                            </Link>
-                            <SubDropDown>
-                              <li>
-                                <Link
-                                  href="#sistema-estandar"
-                                  onClick={() => setMobileToggle(false)}
-                                >
-                                  Sistema Estandar
-                                </Link>
-                              </li>
-                              <li>
-                                <Link
-                                  href="#sistema-medida"
-                                  onClick={() => setMobileToggle(false)}
-                                >
-                                  Sistema a medida
-                                </Link>
-                              </li>
-                            </SubDropDown>
-                          </li>
-
                           <li>
                             <Link
                               href="#vps"
@@ -138,6 +130,24 @@ const Header: React.FC<HeaderProps> = ({ variant }) => {
                             >
                               VPS
                             </Link>
+                            <SubDropDown>
+                              <li>
+                                <Link
+                                  href="#alquiler-alojamiento"
+                                  onClick={() => setMobileToggle(false)}
+                                >
+                                  Alquiler Alojamiento
+                                </Link>
+                              </li>
+                              <li>
+                                <Link
+                                  href="#alquiler-sistemas"
+                                  onClick={() => setMobileToggle(false)}
+                                >
+                                  Alquiler Sistemas
+                                </Link>
+                              </li>
+                            </SubDropDown>
                           </li>
                           <li>
                             <Link
@@ -153,6 +163,14 @@ const Header: React.FC<HeaderProps> = ({ variant }) => {
                               onClick={() => setMobileToggle(false)}
                             >
                               Desarrollo Web
+                            </Link>
+                          </li>
+                          <li>
+                            <Link
+                              href="#utilcon"
+                              onClick={() => setMobileToggle(false)}
+                            >
+                              Utilcon
                             </Link>
                           </li>
                         </ul>
@@ -216,7 +234,7 @@ const Header: React.FC<HeaderProps> = ({ variant }) => {
         <Div className="cs-side_header_in">
           <Div className="cs-side_header_shape" />
           <Link className="cs-site_branding" href="/">
-            <img src="/images/footer_logo.svg" alt="Logo" />
+            <img src="/images/logo/logo2.png" alt="Logo" />
           </Link>
           <Div className="cs-side_header_box">
             <h2 className="cs-side_header_heading">

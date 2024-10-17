@@ -1,6 +1,8 @@
 "use client";
-import FunFact from "@/components/FunFact/FunFact";
+import About from "@/Sections/About";
+import Facturacion from "@/Sections/Facturacion";
 import Hero from "@/components/Hero/Hero";
+import Service from "@/components/Services/Service";
 
 import { useEffect } from "react";
 export default function Home() {
@@ -27,34 +29,34 @@ export default function Home() {
   ];
   const heroSocialLinks = [
     {
-      name: "Behance",
-      links: "/",
+      name: "Facebook",
+      links: "#",
     },
     {
-      name: "Twitter",
-      links: "/",
+      name: "Instagram",
+      links: "#",
+    },
+    {
+      name: "Youtube",
+      links: "#",
     },
   ];
   return (
     <>
       <Hero
-        title="Creativity In <br/>Our Blood Line"
-        subtitle="We deliver best problem solving solution for our client and provide finest finishing product in present and upcoming future."
-        btnText="Get a Quote"
-        btnLink="/contact"
-        scrollDownId="#service"
-        socialLinksHeading="Follow Us"
+        title="Transformamos ideas <br/> en soluciones"
+        subtitle="Somos un equipo joven dedicado a la programación de sistemas convertidas en soluciones, y que brinda soporte técnico a más de 1500 empresas nacionales."
+        btnText="Contacto"
+        btnLink="#contacto"
+        scrollDownId="#nosotros"
+        socialLinksHeading="Siguenos"
         heroSocialLinks={heroSocialLinks}
-        bgImageUrl="/images/hero_bg.jpeg"
+        bgImageUrl="/images/fondo.jpg"
       />
-      <div className="container">
-        <FunFact
-          variant="cs-type1"
-          title="Our fun fact"
-          subtitle="Sed ut perspiciatis unde omnis iste natus error voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis."
-          data={funfaceData}
-        />
-      </div>
+
+      <About />
+      <Service />
+      <Facturacion />
     </>
   );
 }

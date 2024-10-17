@@ -1,4 +1,4 @@
-@import '../../scss/default/color_variable';
+@import "../../scss/default/color_variable";
 
 .cs-hero_social_wrap {
   display: flex;
@@ -18,7 +18,7 @@
   padding-bottom: 35px;
   white-space: nowrap;
   &::after {
-    content: '';
+    content: "";
     height: 15px;
     width: 2px;
     background-color: #999696;
@@ -45,7 +45,7 @@
     }
     &:not(:last-child) {
       &::after {
-        content: '';
+        content: "";
         height: 2px;
         width: 15px;
         background-color: #999696;
@@ -128,6 +128,7 @@
       border-radius: 15px;
       overflow: hidden;
     }
+
     .cs-hero_title {
       margin-bottom: 40px;
       &::first-letter {
@@ -154,7 +155,7 @@
     color: transparent;
   }
   &::before {
-    content: '';
+    content: "";
     height: 5px;
     width: 5px;
     border-radius: 50%;
@@ -184,7 +185,7 @@
         color: inherit;
       }
       &::before {
-        content: '';
+        content: "";
         position: absolute;
         height: 5px;
         width: 0%;
@@ -370,7 +371,7 @@
   }
   &.cs_type_1 {
     &::before {
-      content: '';
+      content: "";
       position: absolute;
       height: 100%;
       width: 100%;
@@ -1116,7 +1117,7 @@
     max-width: 700px;
 
     &::before {
-      content: '';
+      content: "";
       position: absolute;
       width: 207.256px;
       height: 207.256px;
