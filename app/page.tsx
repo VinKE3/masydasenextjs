@@ -1,6 +1,7 @@
 "use client";
 import About from "@/Sections/About";
 import Facturacion from "@/Sections/Facturacion";
+import LiquidacionCompra from "@/Sections/LiquidacionCompra";
 import Services from "@/Sections/Services";
 import Hero3 from "@/components/Hero/Hero3";
 
@@ -37,6 +38,7 @@ export default function Home() {
       <About />
       <Services />
       <Facturacion />
+      <LiquidacionCompra />
     </>
   );
 }

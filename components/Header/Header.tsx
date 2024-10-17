@@ -91,7 +91,7 @@ const Header: React.FC<HeaderProps> = ({ variant }) => {
 
                           <li>
                             <Link
-                              href="#liquidacion-compras"
+                              href="#liquidaciones-compras"
                               onClick={() => setMobileToggle(false)}
                             >
                               Liquidaciones de compra
