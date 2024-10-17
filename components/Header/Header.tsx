@@ -64,7 +64,7 @@ const Header: React.FC<HeaderProps> = ({ variant }) => {
                         <ul>
                           <li className="menu-item-has-children">
                             <Link
-                              href="#sistema-estandar"
+                              href="#facturacion-electronica"
                               onClick={() => setMobileToggle(false)}
                             >
                               F. Electrónica

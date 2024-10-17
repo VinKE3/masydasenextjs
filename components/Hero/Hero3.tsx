@@ -1,10 +1,17 @@
 "use client";
 import React, { useEffect, useState } from "react";
 import parse from "html-react-parser";
-import WaterWave from "react-water-wave";
+
+import dynamic from "next/dynamic";
 import Div from "../Div/Div";
 import Button from "../Button/Button";
 import VerticalLinks from "../VerticalLinks/VerticalLinks";
+import "./hero.scss";
+
+// Importa WaterWave dinámicamente para cargar solo en el cliente
+const WaterWave = dynamic(() => import("react-water-wave"), {
+  ssr: false, // Deshabilita la renderización en el lado del servidor
+});
 
 // Define el tipo para los enlaces sociales
 interface SocialLink {

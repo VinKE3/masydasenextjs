@@ -1,75 +1,59 @@
 import Div from "@/components/Div/Div";
 import Portfolio2 from "@/components/Portfolio/Portfolio2";
-import Portfolio3 from "@/components/Portfolio/Portfolio3";
+import PricingTableList from "@/components/PricingTable/PricingTableList";
+import SectionHeading from "@/components/SectionHeading/SectionHeading";
 import Spacing from "@/components/Spacing/Spacing";
+import VideoModal from "@/components/VideoModal/VideoModal";
 import React from "react";
 const portfolioData = [
   {
-    title: "Winery eCommerce website design & development",
-    subtitle: "Project 01",
-    btnText: "See Details",
-    btnLink: "/portfolio/portfolio-details",
-    imageUrl: "/images/portfolio_35.jpeg",
-    category: "Web Development",
-  },
-  {
-    title: "Euro corporate agency for healthy environment",
-    subtitle: "Project 02",
-    btnText: "See Details",
-    btnLink: "/portfolio/portfolio-details",
-    imageUrl: "/images/portfolio_36.jpeg",
-    category: "Branding",
-  },
-  {
-    title: "Powerful admin dashboard design",
-    subtitle: "Project 03",
-    btnText: "See Details",
-    btnLink: "/portfolio/portfolio-details",
-    imageUrl: "/images/portfolio_37.jpeg",
-    category: "UI Design",
-  },
-  {
-    title: "Crypto financial trading apps for hedge fund",
-    subtitle: "Project 04",
-    btnText: "See Details",
-    btnLink: "/portfolio/portfolio-details",
-    imageUrl: "/images/portfolio_38.jpeg",
-    category: "Apps Design",
+    title: "Facturación Electrónica",
+    subtitle: "Servicio",
+    text: "Ofrecemos un servicio de facturación electrónica que se divide en un sistema estándar que contiene las características básicas y un sistema a medida, personalizado brindando características exclusivas solicitadas por el usuario.",
+    btnText: "Comparar",
+    btnLink: "#sistema-estandar",
+    imageUrl: "/images/utilcon/FONDO.png",
+    category: "Facturación Electrónica",
   },
 ];
 const Facturacion = () => {
   return (
-    <div>
+    <Div id="facturacion-electronica">
       <Spacing lg="150" md="80" />
-      <Spacing lg="150" md="80" />
-      {portfolioData.map((item, index) =>
-        index % 2 === 0 ? (
-          <Div key={index}>
-            <Portfolio2
-              title={item.title}
-              subtitle={item.subtitle}
-              btnText={item.btnText}
-              btnLink={item.btnLink}
-              imageUrl={item.imageUrl}
-              category={item.category}
-            />
-            <Spacing lg="100" md="70" />
-          </Div>
-        ) : (
-          <Div key={index}>
-            <Portfolio3
-              title={item.title}
-              subtitle={item.subtitle}
-              btnText={item.btnText}
-              btnLink={item.btnLink}
-              imageUrl={item.imageUrl}
-              category={item.category}
-            />
-            <Spacing lg="100" md="70" />
-          </Div>
-        )
-      )}
-    </div>
+      {portfolioData.map((item, index) => (
+        <Div key={index}>
+          <Portfolio2
+            title={item.title}
+            subtitle={item.subtitle}
+            text={item.text}
+            btnText={item.btnText}
+            btnLink={item.btnLink}
+            imageUrl={item.imageUrl}
+            category={item.category}
+          />
+          <Spacing lg="100" md="70" />
+        </Div>
+      ))}
+      <Div id="sistema-estandar" className="container">
+        <SectionHeading
+          title="Sistemas de<br/>facturación web"
+          subtitle="Tabla Comparativa"
+        />
+        <Spacing lg="85" md="40" />
+        <PricingTableList />
+      </Div>
+      <Spacing lg="130" md="70" />
+      <Div id="sistema-medida" className="container">
+        <h2 className="cs-font_35 cs-m0 text-center cs-line_height_4">
+          Video demostrativo sistema de facturación web a medida
+        </h2>
+        <Spacing lg="70" md="70" />
+        <VideoModal
+          videoSrc="https://www.youtube.com/watch?v=Kem-j1OLBwE"
+          bgUrl="/images/utilcon/FONDO.png"
+        />
+      </Div>
+    </Div>
   );
 };
 

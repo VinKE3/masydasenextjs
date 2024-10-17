@@ -6,6 +6,7 @@ import "./portfolio.scss";
 interface Portfolio2Props {
   title: string;
   subtitle: string;
+  text: string;
   btnText: string;
   btnLink: string;
   imageUrl: string;
@@ -15,6 +16,7 @@ interface Portfolio2Props {
 const Portfolio2: React.FC<Portfolio2Props> = ({
   title,
   subtitle,
+  text,
   btnText,
   btnLink,
   imageUrl,
@@ -45,6 +47,7 @@ const Portfolio2: React.FC<Portfolio2Props> = ({
               <h3 className="cs-section_subtitle">{subtitle}</h3>
               <h2 className="cs-section_title">{title}</h2>
               <Spacing lg="45" md="20" />
+              <p className="sizetext">{text}</p>
               <span
                 onMouseEnter={() => setHovered(true)}
                 onMouseLeave={() => setHovered(false)}

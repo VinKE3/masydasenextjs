@@ -1,0 +1,46 @@
+import React from "react";
+import PricingTable from "../PricingTable/PrincingTable";
+import Section from "../Div/Div";
+import Spacing from "../Spacing/Spacing";
+import "./pricing.scss";
+
+const PricingTableList: React.FC = () => {
+  return (
+    <Section className="position-relative">
+      <Section className="row">
+        <Section className="col-lg-6">
+          <PricingTable
+            title="Estándar"
+            features={[
+              { name: "Sujeto a modificaciones", available: false },
+              { name: "Multiples Usuarios", available: true },
+              { name: "Demostración", available: true },
+              { name: "Soporte", available: true }, // Característica no disponible
+            ]}
+            btnText="Contratar"
+            btnLink="#contacto"
+          />
+
+          <Spacing lg="25" md="25" />
+        </Section>
+
+        <Section className="col-lg-6">
+          <PricingTable
+            title="A Medida"
+            features={[
+              { name: "Sujeto a modificaciones", available: true },
+              { name: "Multiples Usuarios", available: true },
+              { name: "Demostración", available: true },
+              { name: "Soporte", available: true }, // Característica no disponible
+            ]}
+            btnText="Contratar"
+            btnLink="#contacto"
+          />
+          <Spacing lg="25" md="25" />
+        </Section>
+      </Section>
+    </Section>
+  );
+};
+
+export default PricingTableList;

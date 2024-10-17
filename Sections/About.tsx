@@ -7,7 +7,6 @@ import React from "react";
 const About = () => {
   return (
     <>
-      {" "}
       {/* <Spacing lg="100" md="80" /> */}
       <Div id="nosotros">
         <div
