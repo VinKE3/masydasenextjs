@@ -2,6 +2,7 @@ import Div from "@/components/Div/Div";
 import Portfolio2 from "@/components/Portfolio/Portfolio2";
 import PricingTableList from "@/components/PricingTable/PricingTableList";
 import SectionHeading from "@/components/SectionHeading/SectionHeading";
+import SectionHeading2 from "@/components/SectionHeading/SectionHeading2";
 import Spacing from "@/components/Spacing/Spacing";
 import VideoModal from "@/components/VideoModal/VideoModal";
 import React from "react";
@@ -19,7 +20,7 @@ const portfolioData = [
 const Facturacion = () => {
   return (
     <Div id="facturacion-electronica">
-      <Spacing lg="150" md="80" />
+      <Spacing lg="150" md="70" />
       {portfolioData.map((item, index) => (
         <Div key={index}>
           <Portfolio2
@@ -34,15 +35,20 @@ const Facturacion = () => {
           <Spacing lg="100" md="70" />
         </Div>
       ))}
-      <Div id="sistema-estandar" className="container">
-        <SectionHeading
-          title="Sistemas de<br/>facturación web"
-          subtitle="Tabla Comparativa"
-        />
+      <Spacing lg="100" md="40" />
+      <Div style={{ backgroundColor: "#fff" }}>
+        <Spacing lg="100" md="40" />
+        <Div id="sistema-estandar" className="container">
+          <SectionHeading2
+            title="Sistemas de<br/>facturación web"
+            subtitle="Tabla Comparativa"
+          />
+          <Spacing lg="40" md="40" />
+          <PricingTableList />
+        </Div>
         <Spacing lg="85" md="40" />
-        <PricingTableList />
       </Div>
-      <Spacing lg="130" md="70" />
+      <Spacing lg="125" md="70" />
       <Div id="sistema-medida" className="container">
         <h2 className="cs-font_35 cs-m0 text-center cs-line_height_4">
           Video demostrativo sistema de facturación web a medida
@@ -53,6 +59,7 @@ const Facturacion = () => {
           bgUrl="/images/utilcon/FONDO.png"
         />
       </Div>
+      <Spacing lg="125" md="80" />
     </Div>
   );
 };

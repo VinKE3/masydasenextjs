@@ -11,11 +11,12 @@ const PricingTableList: React.FC = () => {
         <Section className="col-lg-6">
           <PricingTable
             title="Estándar"
+            text="Sistema para gestionar distintas etapas del procesamiento adasdasda s dasd as dsa"
             features={[
               { name: "Sujeto a modificaciones", available: false },
               { name: "Multiples Usuarios", available: true },
               { name: "Demostración", available: true },
-              { name: "Soporte", available: true }, // Característica no disponible
+              { name: "Soporte", available: true },
             ]}
             btnText="Contratar"
             btnLink="#contacto"
@@ -27,11 +28,12 @@ const PricingTableList: React.FC = () => {
         <Section className="col-lg-6">
           <PricingTable
             title="A Medida"
+            text="Sistema para gestionar distintas etapas del procesamiento adasdasda s dasd as dsa"
             features={[
               { name: "Sujeto a modificaciones", available: true },
               { name: "Multiples Usuarios", available: true },
               { name: "Demostración", available: true },
-              { name: "Soporte", available: true }, // Característica no disponible
+              { name: "Soporte", available: true },
             ]}
             btnText="Contratar"
             btnLink="#contacto"

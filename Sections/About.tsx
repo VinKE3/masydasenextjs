@@ -7,15 +7,9 @@ import React from "react";
 const About = () => {
   return (
     <>
-      {/* <Spacing lg="100" md="80" /> */}
+      <Spacing lg="125" md="80" />
       <Div id="nosotros">
-        <div
-          style={{
-            background: "linear-gradient(to bottom, #034281, #001f4d)", // Degradado de azul oscuro
-            paddingBottom: "100px",
-            paddingTop: "100px",
-          }}
-        >
+        <div>
           <Div className="container">
             <Div className="row">
               <Div className="col-xl-5 col-lg-6">
@@ -93,6 +87,7 @@ const About = () => {
           </Div>
         </Div>
       </Div>
+      <Spacing lg="125" md="80" />
     </>
   );
 };

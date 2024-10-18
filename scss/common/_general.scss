@@ -182,7 +182,9 @@ hr {
 .cs-gray_bg {
   background-color: $gray;
 }
-
+.cs-gray_color {
+  color: $gray;
+}
 .cs-accent_bg,
 .cs-accent_bg_hover:hover {
   background-color: $accent;
@@ -202,6 +204,75 @@ hr {
   align-items: center;
   font-weight: 600;
   color: $white;
+  cursor: pointer;
+  svg {
+    margin-left: 15px;
+    font-size: 24px;
+  }
+  span {
+    display: inline-block;
+    position: relative;
+    &::before {
+      content: "";
+      position: absolute;
+      height: 2px;
+      width: 100%;
+      bottom: 0;
+      left: 0;
+      color: #a5acb3;
+      background-color: $celeste;
+      transform: scaleX(0);
+      transform-origin: 0 50%;
+      transition-property: transform;
+      transition-property: transform, -webkit-transform;
+      transition-duration: 0.6s;
+      transition-timing-function: ease-out;
+    }
+  }
+  &:hover {
+    span {
+      &::before {
+        transform: scaleX(1);
+        transition-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66);
+      }
+    }
+  }
+  &.cs-type1 {
+    flex-direction: row-reverse;
+    svg {
+      margin-left: 0px;
+      margin-right: 15px;
+      transform: rotate(180deg);
+    }
+    span {
+      &::before {
+        left: initial;
+        right: -100%;
+        transform: scaleX(0) rotateY(180deg);
+      }
+    }
+    &:hover {
+      span {
+        &::before {
+          transform: scaleX(1) rotateY(180deg);
+        }
+      }
+    }
+  }
+  &.cs-type2 {
+    flex-direction: row-reverse;
+    svg {
+      margin-left: 0;
+      margin-right: 15px;
+      color: $celeste;
+    }
+  }
+}
+.cs-text_btn2 {
+  display: inline-flex;
+  align-items: center;
+  font-weight: 600;
+  color: $accent;
   cursor: pointer;
   svg {
     margin-left: 15px;
@@ -1239,7 +1310,7 @@ label {
       text-underline-position: under;
       text-underline-offset: -0.12em;
       &:hover {
-        text-decoration-color: $accent;
+        text-decoration-color: $celeste;
       }
     }
   }
