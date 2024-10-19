@@ -4,6 +4,7 @@ import Facturacion from "@/Sections/Facturacion";
 import GuiasRemision from "@/Sections/GuiasRemision";
 import LiquidacionCompra from "@/Sections/LiquidacionCompra";
 import Services from "@/Sections/Services";
+import Utilcon from "@/Sections/Utilcon";
 import Hero3 from "@/components/Hero/Hero3";
 
 import { useEffect } from "react";
@@ -41,6 +42,7 @@ export default function Home() {
       <Facturacion />
       <LiquidacionCompra />
       <GuiasRemision />
+      <Utilcon />
     </>
   );
 }

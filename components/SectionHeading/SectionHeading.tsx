@@ -7,6 +7,7 @@ import Div from "../Div/Div";
 interface SectionHeadingProps {
   title: string;
   subtitle: string;
+  text?: string;
   btnLink?: string;
   btnText?: string;
   variant?: string;
@@ -20,6 +21,7 @@ const SectionHeading: React.FC<SectionHeadingProps> = ({
   btnText,
   variant,
   children,
+  text,
 }) => {
   return (
     <Div
@@ -31,6 +33,7 @@ const SectionHeading: React.FC<SectionHeadingProps> = ({
     >
       <h3 className="cs-section_subtitle">{parse(subtitle)}</h3>
       <h2 className="cs-section_title">{parse(title)}</h2>
+      <p>{text}</p>
       {children}
       {btnText && (
         <>

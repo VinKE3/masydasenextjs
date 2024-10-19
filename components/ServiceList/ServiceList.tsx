@@ -21,28 +21,28 @@ const serviceData: ServiceData[] = [
     title: "WP Development",
     subtitle:
       "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium lorema doloremque laudantium, totam rem.",
-    imgUrl: "/images/service_7.jpeg",
+    imgUrl: "/images/utilcon/LOGIN.png",
     href: "/service/service-details",
   },
   {
     title: "UI/UX Design",
     subtitle:
       "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium lorema doloremque laudantium, totam rem.",
-    imgUrl: "/images/service_8.jpeg",
+    imgUrl: "/images/utilcon/FONDO.png",
     href: "/service/service-details",
   },
   {
     title: "Branding",
     subtitle:
       "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium lorema doloremque laudantium, totam rem.",
-    imgUrl: "/images/service_9.jpeg",
+    imgUrl: "/images/utilcon/CANCELACIONES.png",
     href: "/service/service-details",
   },
   {
     title: "Social Ad Campaign",
     subtitle:
       "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium lorema doloremque laudantium, totam rem.",
-    imgUrl: "/images/service_10.jpeg",
+    imgUrl: "/images/utilcon/LOGIN.png",
     href: "/service/service-details",
   },
 ];
