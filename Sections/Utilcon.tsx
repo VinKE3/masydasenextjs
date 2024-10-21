@@ -15,7 +15,6 @@ const Utilcon = () => {
           text="Herramienta diseñada para facilitar las provisiones o cargas masivas de sus ventas y compras, cuenta con un módulo de cancelaciones y trabaja enterno red."
           variant="cs-style1 text-center"
         />
-
         <Spacing lg="70" md="45" />
         <ServiceList />
       </Div>

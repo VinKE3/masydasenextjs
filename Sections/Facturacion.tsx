@@ -36,18 +36,28 @@ const Facturacion = () => {
         </Div>
       ))}
       <Spacing lg="100" md="40" />
-      <Div style={{ backgroundColor: "#fff" }}>
+      <Div style={{ backgroundColor: "#000", position: "relative", zIndex: 1 }}>
         <Spacing lg="100" md="40" />
         <Div id="sistema-estandar" className="container">
-          <SectionHeading2
-            title="Sistemas de<br/>facturación web"
-            subtitle="Tabla Comparativa"
+          <SectionHeading
+            title="Sistema de facturación web"
+            subtitle="Servicios"
+            text="Es una herramienta digital que automatiza la emisión y gestión de comprobantes electrónicos, ayudando a reducir errores, costos y optimizando sus procesos administrativos."
+            variant="cs-style1 text-center"
           />
-          <Spacing lg="40" md="40" />
+          <Spacing lg="180" md="40" />
+        </Div>
+      </Div>
+
+      <Div style={{ backgroundColor: "#fff", zIndex: 2 }}>
+        <Div
+          className="container"
+          style={{ marginTop: "-150px", position: "relative", zIndex: 2 }}
+        >
           <PricingTableList />
         </Div>
-        <Spacing lg="85" md="40" />
       </Div>
+
       <Spacing lg="125" md="70" />
       <Div id="sistema-medida" className="container">
         <h2 className="cs-font_35 cs-m0 text-center cs-line_height_4">

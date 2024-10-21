@@ -10,7 +10,7 @@ const PricingTableList: React.FC = () => {
       <Section className="row">
         <Section className="col-lg-6">
           <PricingTable
-            title="Estándar"
+            titleImage="/images/factura/standar.jpg"
             text="Sistema para gestionar distintas etapas del procesamiento adasdasda s dasd as dsa"
             features={[
               { name: "Sujeto a modificaciones", available: false },
@@ -27,7 +27,7 @@ const PricingTableList: React.FC = () => {
 
         <Section className="col-lg-6">
           <PricingTable
-            title="A Medida"
+            titleImage="/images/factura/medida.jpg"
             text="Sistema para gestionar distintas etapas del procesamiento adasdasda s dasd as dsa"
             features={[
               { name: "Sujeto a modificaciones", available: true },
