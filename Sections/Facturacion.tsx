@@ -52,7 +52,7 @@ const Facturacion = () => {
       <Div style={{ backgroundColor: "#fff", zIndex: 2 }}>
         <Div
           className="container"
-          style={{ marginTop: "-150px", position: "relative", zIndex: 2 }}
+          style={{ marginTop: "-120px", position: "relative", zIndex: 2 }}
         >
           <PricingTableList />
         </Div>

@@ -14,6 +14,7 @@ interface PricingTableProps {
   btnLink: string;
   btnText: string;
   text: string;
+  textUper: string;
 }
 
 const PricingTable: React.FC<PricingTableProps> = ({
@@ -22,6 +23,7 @@ const PricingTable: React.FC<PricingTableProps> = ({
   btnLink,
   btnText,
   text,
+  textUper,
 }) => {
   return (
     <Div className="cs-pricing_table cs-style1">
@@ -36,7 +38,15 @@ const PricingTable: React.FC<PricingTableProps> = ({
       </Div>
       <Div className="cs-pricing_info">
         <Div className="cs-price"></Div>
-        <Div className="cs-gray_color">{text}</Div>
+        <Div className="cs-gray_color">
+          {text}{" "}
+          <span
+            style={{}}
+            className="cs-gray_color text-uppercase cs-semi_bold"
+          >
+            {textUper}
+          </span>
+        </Div>
       </Div>
       <ul className="cs-pricing_feature cs-mp0">
         {features.map((feature, index) => (
@@ -48,7 +58,7 @@ const PricingTable: React.FC<PricingTableProps> = ({
                 <Icon icon="bi:x-circle" />
               )}
             </span>
-            <span className="cs-accent_color">{feature.name}</span>
+            <span className="cs-gray_color">{feature.name}</span>
           </li>
         ))}
       </ul>

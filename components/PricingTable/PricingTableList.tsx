@@ -11,12 +11,18 @@ const PricingTableList: React.FC = () => {
         <Section className="col-lg-6">
           <PricingTable
             titleImage="/images/factura/standar.jpg"
-            text="Sistema para gestionar distintas etapas del procesamiento adasdasda s dasd as dsa"
+            text="No aplica a "
+            textUper="modificaciones"
             features={[
-              { name: "Sujeto a modificaciones", available: false },
-              { name: "Multiples Usuarios", available: true },
-              { name: "Demostración", available: true },
-              { name: "Soporte", available: true },
+              { name: "Funciones predeterminadas.", available: true },
+              { name: "Bajo costo.", available: true },
+              { name: "Incluye Soporte estandarizado", available: true },
+              { name: "Implementación inmediata.", available: true },
+              { name: "Escalabilidad limitada.", available: true },
+              {
+                name: "Diseño y compatibilidad con cualquier rubro.",
+                available: true,
+              },
             ]}
             btnText="Contratar"
             btnLink="#contacto"
@@ -28,12 +34,27 @@ const PricingTableList: React.FC = () => {
         <Section className="col-lg-6">
           <PricingTable
             titleImage="/images/factura/medida.jpg"
-            text="Sistema para gestionar distintas etapas del procesamiento adasdasda s dasd as dsa"
+            text="Si Aplica a modificaciones bajo los "
+            textUper="requerimientos del cliente"
             features={[
-              { name: "Sujeto a modificaciones", available: true },
-              { name: "Multiples Usuarios", available: true },
-              { name: "Demostración", available: true },
-              { name: "Soporte", available: true },
+              {
+                name: "Personalización según necesidades de la empresa.",
+                available: true,
+              },
+              { name: "Mayor inversión con enfoque único.", available: true },
+              { name: "Incluye Soporte especializado", available: true },
+              {
+                name: "Requiere tiempo de desarrollo e implementación.",
+                available: true,
+              },
+              {
+                name: "Apto para modificaciones según cambios de la empresa.",
+                available: true,
+              },
+              {
+                name: "Exclusividad de uso.",
+                available: true,
+              },
             ]}
             btnText="Contratar"
             btnLink="#contacto"
