@@ -31,8 +31,7 @@ export default function Home() {
     <>
       <Hero3
         title="Transformamos ideas <br />en Soluciones"
-        btnLink="#contacto"
-        btnText={`Contacto`}
+        subtitle="En MASYDASE, somos un equipo joven especializado en el desarrollo de soluciones tecnológicas que impulsan la transformación digital de tu empresa."
         socialLinksHeading="Siguenos"
         heroSocialLinks={heroSocialLinks}
         bgImageUrl="./images/fondo.jpg"

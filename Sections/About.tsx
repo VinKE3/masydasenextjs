@@ -1,15 +1,34 @@
 import Div from "@/components/Div/Div";
+import FunFact from "@/components/FunFact/FunFact";
+import FunFact2 from "@/components/FunFact/FunFact2";
 import IconBox from "@/components/IconBox/IconBox";
 import SectionHeading from "@/components/SectionHeading/SectionHeading";
 import Spacing from "@/components/Spacing/Spacing";
 import React from "react";
+const funfaceData = [
+  {
+    title: "Empresas nacionales",
+    factNumber: "1.5K",
+  },
 
+  {
+    title: "Sistemas personalizados",
+    factNumber: "25",
+  },
+  {
+    title: "Páginas web creadas",
+    factNumber: "120",
+  },
+  {
+    title: "Años de experiencia",
+    factNumber: "25",
+  },
+];
 const About = () => {
   return (
     <>
-      <Spacing lg="125" md="80" />
       <Div id="nosotros">
-        <div>
+        {/* <div>
           <Div className="container">
             <Div className="row">
               <Div className="col-xl-5 col-lg-6">
@@ -85,9 +104,22 @@ const About = () => {
               <Spacing lg="30" md="30" />
             </Div>
           </Div>
-        </Div>
+        </Div> */}
+        <div className="container">
+          {/* <FunFact
+            variant="cs-type1"
+            title="Soluciones al instante"
+            subtitle="En MASYDASE, somos un equipo joven especializado en el desarrollo de soluciones tecnológicas que impulsan la transformación digital de tu empresa, permitiéndote concentrarte en las áreas clave de tu negocio."
+            data={funfaceData}
+          /> */}
+          <FunFact2
+            data={funfaceData}
+            variant="cs-type1"
+            bgUrl="/images/funfact_shape_bg.svg"
+          />
+          <Spacing lg="100" md="80" />
+        </div>
       </Div>
-      <Spacing lg="125" md="80" />
     </>
   );
 };

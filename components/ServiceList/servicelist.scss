@@ -1,7 +1,7 @@
-@import '../../scss/default/color_variable';
+@import "../../scss/default/color_variable";
 .cs-iconbox_3_list {
   position: relative;
-  padding-left: 550px;
+  padding-left: 750px;
   min-height: 640px;
   > *:not(:last-child) {
     border-bottom: 1px solid #4d4d4d;
@@ -11,7 +11,7 @@
     left: 0;
     top: 25px;
     pointer-events: none;
-    max-width: 416px;
+    max-width: 670px;
     height: 600px;
     .cs-image_layer_in {
       height: 100%;
@@ -101,7 +101,7 @@
       position: relative;
       &::before {
         counter-increment: number-counter;
-        content: counter(number-counter, decimal-leading-zero) '. ';
+        content: counter(number-counter, decimal-leading-zero) ". ";
         font-weight: 600;
         color: #fff;
         position: absolute;
@@ -129,8 +129,8 @@
   align-items: center;
   flex-direction: row-reverse;
   justify-content: space-between;
-  padding-bottom: 25px;
-  padding-top: 25px;
+  padding-bottom: 15px;
+  padding-top: 15px;
   color: $secondary;
   .cs-iconbox_in {
     margin-right: 30px;
@@ -139,8 +139,8 @@
   .cs-iconbox_icon {
     color: $ternary;
     border: 2px solid $ternary;
-    height: 80px;
-    width: 80px;
+    height: 60px;
+    width: 60px;
     border-radius: 50%;
     flex: none;
     transition: all 0.3s ease;
@@ -151,7 +151,7 @@
     }
   }
   .cs-iconbox_title {
-    font-size: 30px;
+    font-size: 25px;
     margin-bottom: 15px;
   }
   .cs-iconbox_subtitle {

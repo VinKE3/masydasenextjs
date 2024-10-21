@@ -1102,8 +1102,8 @@ label {
     }
   }
   &.cs-size_md {
-    padding-right: 20px;
-    padding-bottom: 20px;
+    padding-right: 0px;
+    padding-bottom: 0px;
     .cs-image_layer_in {
       &::after {
         right: -20px;
@@ -1406,6 +1406,14 @@ label {
 
 .cs-masonry_4_col {
   column-count: 4;
+  column-gap: 25px;
+  padding: 0 25px;
+  > * {
+    margin-bottom: 25px;
+  }
+}
+.cs-masonry_1_col {
+  column-count: 1;
   column-gap: 25px;
   padding: 0 25px;
   > * {

@@ -36,7 +36,7 @@ const Header: React.FC<HeaderProps> = ({ variant }) => {
             <Div className="cs-main_header_in">
               <Div className="cs-main_header_left">
                 <Link className="cs-site_branding" href="/">
-                  <img src="/images/logo/logo2.png" alt="Logo" />
+                  <img src="/images/logo/MS.png" alt="Logo" />
                 </Link>
               </Div>
               <Div className="cs-main_header_center">
@@ -151,22 +151,6 @@ const Header: React.FC<HeaderProps> = ({ variant }) => {
                           </li>
                           <li>
                             <Link
-                              href="#outsourcing"
-                              onClick={() => setMobileToggle(false)}
-                            >
-                              Outsourcing Contable
-                            </Link>
-                          </li>
-                          <li>
-                            <Link
-                              href="#desarrollo-web"
-                              onClick={() => setMobileToggle(false)}
-                            >
-                              Desarrollo Web
-                            </Link>
-                          </li>
-                          <li>
-                            <Link
                               href="#utilcon"
                               onClick={() => setMobileToggle(false)}
                             >
@@ -176,7 +160,22 @@ const Header: React.FC<HeaderProps> = ({ variant }) => {
                         </ul>
                       </DropDown>
                     </li>
-
+                    <li>
+                      <Link
+                        href="#outsourcing"
+                        onClick={() => setMobileToggle(false)}
+                      >
+                        Outsourcing Contable
+                      </Link>
+                    </li>
+                    <li>
+                      <Link
+                        href="#desarrollo-web"
+                        onClick={() => setMobileToggle(false)}
+                      >
+                        Desarrollo Web
+                      </Link>
+                    </li>
                     <li>
                       <Link
                         href="#contacto"
@@ -234,7 +233,7 @@ const Header: React.FC<HeaderProps> = ({ variant }) => {
         <Div className="cs-side_header_in">
           <Div className="cs-side_header_shape" />
           <Link className="cs-site_branding" href="/">
-            <img src="/images/logo/logo2.png" alt="Logo" />
+            <img src="/images/logo/MS.png" alt="Logo" />
           </Link>
           <Div className="cs-side_header_box">
             <h2 className="cs-side_header_heading">

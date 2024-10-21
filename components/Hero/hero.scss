@@ -122,9 +122,10 @@
     .cs-hero_bg {
       position: absolute;
       height: 100%;
+      width: 100%;
       top: 0;
-      left: 115px;
-      right: 115px;
+      // left: 115px;
+      // right: 115px;
       border-radius: 15px;
       overflow: hidden;
     }
@@ -132,7 +133,7 @@
     .cs-hero_title {
       margin-bottom: 40px;
       &::first-letter {
-        color: $accent;
+        color: $white;
       }
     }
     .cs-hero_social_wrap {

@@ -8,11 +8,11 @@ const Services = () => {
   return (
     <>
       <Div
-        style={{
-          backgroundImage: 'url("/images/bg04.png")', // Asegúrate de poner el nombre correcto de la imagen
-          backgroundSize: "cover", // O 'contain', dependiendo de cómo quieras que se ajuste la imagen
-          backgroundPosition: "center", // Centra la imagen
-        }}
+        // style={{
+        //   backgroundImage: 'url("/images/bg04.png")', // Asegúrate de poner el nombre correcto de la imagen
+        //   backgroundSize: "cover", // O 'contain', dependiendo de cómo quieras que se ajuste la imagen
+        //   backgroundPosition: "center", // Centra la imagen
+        // }}
         id="servicios"
       >
         <Spacing lg="125" md="80" />

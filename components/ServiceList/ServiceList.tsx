@@ -6,42 +6,56 @@ import "./servicelist.scss";
 // Definimos la estructura de los datos del servicio
 interface ServiceData {
   title: string;
-  subtitle: string;
+  subtitle?: string;
   imgUrl: string;
   href: string;
 }
 
 // Definimos las props del componente
 interface ServiceListProps {
-  variant?: string; // El variant es opcional
+  variant?: string;
 }
 
 const serviceData: ServiceData[] = [
   {
-    title: "WP Development",
-    subtitle:
-      "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium lorema doloremque laudantium, totam rem.",
+    title: "Provision de Ventas Compras y Honorarios",
+
     imgUrl: "/images/utilcon/LOGIN.png",
     href: "/service/service-details",
   },
   {
-    title: "UI/UX Design",
-    subtitle:
-      "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium lorema doloremque laudantium, totam rem.",
+    title: "Cancelaciones Masivas",
+
     imgUrl: "/images/utilcon/FONDO.png",
     href: "/service/service-details",
   },
   {
-    title: "Branding",
-    subtitle:
-      "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium lorema doloremque laudantium, totam rem.",
+    title: "Elimina comprobantes subidos de manera masiva.",
+
     imgUrl: "/images/utilcon/CANCELACIONES.png",
     href: "/service/service-details",
   },
   {
-    title: "Social Ad Campaign",
-    subtitle:
-      "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium lorema doloremque laudantium, totam rem.",
+    title: "Carga de anexos",
+
+    imgUrl: "/images/utilcon/LOGIN.png",
+    href: "/service/service-details",
+  },
+  {
+    title: "Tipo de Cambio",
+
+    imgUrl: "/images/utilcon/CANCELACIONES.png",
+    href: "/service/service-details",
+  },
+  {
+    title: "Valida comprobantes",
+
+    imgUrl: "/images/utilcon/LOGIN.png",
+    href: "/service/service-details",
+  },
+  {
+    title: "Elimina empresas y periodos.",
+
     imgUrl: "/images/utilcon/LOGIN.png",
     href: "/service/service-details",
   },

@@ -4,7 +4,7 @@ import parse from "html-react-parser";
 
 import dynamic from "next/dynamic";
 import Div from "../Div/Div";
-import Button from "../Button/Button";
+
 import VerticalLinks from "../VerticalLinks/VerticalLinks";
 import "./hero.scss";
 
@@ -23,19 +23,19 @@ interface SocialLink {
 // Define el tipo para las props del componente Hero3
 interface Hero3Props {
   title: string;
+  subtitle: string;
   socialLinksHeading: string;
   heroSocialLinks: SocialLink[]; // Asegúrate de que este tipo se ajuste a tus datos
-  btnLink: string;
-  btnText: string;
+
   bgImageUrl: string;
 }
 
 const Hero3: React.FC<Hero3Props> = ({
   title,
+  subtitle,
   socialLinksHeading,
   heroSocialLinks,
-  btnLink,
-  btnText,
+
   bgImageUrl,
 }) => {
   const [isBrowser, setIsBrowser] = useState(false);
@@ -55,7 +55,9 @@ const Hero3: React.FC<Hero3Props> = ({
             <Div className="container">
               <Div className="cs-hero_text text-center">
                 <h1 className="cs-hero_title">{parse(title)}</h1>
-                <Button btnLink={btnLink} btnText={btnText} />
+                <Div className="cs-hero_info justify-content-center">
+                  <Div className="cs-hero_subtitle">{subtitle}</Div>
+                </Div>
               </Div>
             </Div>
           )}
