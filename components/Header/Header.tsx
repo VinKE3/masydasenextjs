@@ -2,7 +2,7 @@
 import React, { useEffect, useState } from "react";
 import Link from "next/link";
 import SocialWidget from "../Widget/SocialWidget";
-import Newsletter from "../Widget/Newsletter";
+
 import ContactInfoWidget from "../Widget/ContactInfoWidget";
 import Div from "../Div/Div";
 import DropDown from "./DropDown";

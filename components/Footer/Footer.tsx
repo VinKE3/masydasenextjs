@@ -1,7 +1,7 @@
 import React from "react";
 import Div from "../Div/Div";
 import SocialWidget from "../Widget/SocialWidget";
-import Newsletter from "../Widget/Newsletter";
+
 import ContactInfoWidget from "../Widget/ContactInfoWidget";
 import MenuWidget from "../Widget/MenuWidget";
 import TextWidget from "../Widget/TextWidget";
