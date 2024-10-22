@@ -1,8 +1,5 @@
 import Div from "@/components/Div/Div";
-import FunFact from "@/components/FunFact/FunFact";
 import FunFact2 from "@/components/FunFact/FunFact2";
-import IconBox from "@/components/IconBox/IconBox";
-import SectionHeading from "@/components/SectionHeading/SectionHeading";
 import Spacing from "@/components/Spacing/Spacing";
 import React from "react";
 const funfaceData = [
@@ -10,17 +7,16 @@ const funfaceData = [
     title: "Empresas nacionales",
     factNumber: "1.5K",
   },
-
-  {
-    title: "Sistemas personalizados",
-    factNumber: "25",
-  },
   {
     title: "Páginas web creadas",
     factNumber: "120",
   },
   {
     title: "Años de experiencia",
+    factNumber: "25",
+  },
+  {
+    title: "Sistemas personalizados",
     factNumber: "25",
   },
 ];

@@ -19,7 +19,27 @@ const ContactInfoWidget = ({ withIcon, title }: ContactInfoWidgetProps) => {
           ) : (
             ""
           )}
-          +44 454 7800 112
+          (+51)987351513
+        </li>
+        <li>
+          {withIcon ? (
+            <span className="cs-accent_color">
+              <Icon icon="material-symbols:add-call-rounded" />
+            </span>
+          ) : (
+            ""
+          )}
+          (+51)984799203
+        </li>
+        <li>
+          {withIcon ? (
+            <span className="cs-accent_color">
+              <Icon icon="material-symbols:add-call-rounded" />
+            </span>
+          ) : (
+            ""
+          )}
+          (+51)936072443
         </li>
         <li>
           {withIcon ? (
@@ -29,7 +49,7 @@ const ContactInfoWidget = ({ withIcon, title }: ContactInfoWidgetProps) => {
           ) : (
             ""
           )}
-          infotech@arino.com
+          ventas@masydase.com
         </li>
         <li>
           {withIcon ? (
@@ -39,8 +59,8 @@ const ContactInfoWidget = ({ withIcon, title }: ContactInfoWidgetProps) => {
           ) : (
             ""
           )}
-          50 Wall Street Suite, 44150 <br />
-          Ohio, United States
+          Villa el Salvador, Sec. 3 <br />
+          Grupo 13 Mza. C Lote. 9
         </li>
       </ul>
     </>

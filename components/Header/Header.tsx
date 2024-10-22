@@ -36,7 +36,7 @@ const Header: React.FC<HeaderProps> = ({ variant }) => {
             <Div className="cs-main_header_in">
               <Div className="cs-main_header_left">
                 <Link className="cs-site_branding" href="/">
-                  <img src="/images/logo/MS.png" alt="Logo" />
+                  <img src="/images/logo/MS2.png" alt="Logo" />
                 </Link>
               </Div>
               <Div className="cs-main_header_center">
@@ -233,23 +233,23 @@ const Header: React.FC<HeaderProps> = ({ variant }) => {
         <Div className="cs-side_header_in">
           <Div className="cs-side_header_shape" />
           <Link className="cs-site_branding" href="/">
-            <img src="/images/logo/MS.png" alt="Logo" />
+            <img src="/images/logo/MS2.png" alt="Logo" />
           </Link>
           <Div className="cs-side_header_box">
             <h2 className="cs-side_header_heading">
-              Do you have a project in your <br /> mind? Keep connect us.
+              Transformamos ideas <br /> en soluciones ágiles de confianza.
             </h2>
           </Div>
           <Div className="cs-side_header_box">
-            <ContactInfoWidget title="Contact Us" withIcon />
+            <ContactInfoWidget title="Contacto" withIcon />
           </Div>
-          <Div className="cs-side_header_box">
+          {/* <Div className="cs-side_header_box">
             <Newsletter
               title="Subscribe"
               subtitle="At vero eos et accusamus et iusto odio as part dignissimos ducimus qui blandit."
               placeholder="example@gmail.com"
             />
-          </Div>
+          </Div> */}
           <Div className="cs-side_header_box">
             <SocialWidget />
           </Div>
