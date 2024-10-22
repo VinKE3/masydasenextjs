@@ -31,9 +31,9 @@ const SectionHeading: React.FC<SectionHeadingProps> = ({
           : `cs-section_heading cs-style1`
       }
     >
-      <h3 className="cs-section_subtitle">{parse(subtitle)}</h3>
-      <h2 className="cs-section_title">{parse(title)}</h2>
-      <p>{text}</p>
+      <h3 className="cs-section_subtitle">{parse(subtitle || "")}</h3>
+      <h2 className="cs-section_title">{parse(title || "")}</h2>
+      <p className="pt-25">{parse(text || "")}</p>
       {children}
       {btnText && (
         <>

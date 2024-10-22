@@ -2,7 +2,6 @@ import Div from "@/components/Div/Div";
 import Portfolio2 from "@/components/Portfolio/Portfolio2";
 import PricingTableList from "@/components/PricingTable/PricingTableList";
 import SectionHeading from "@/components/SectionHeading/SectionHeading";
-import SectionHeading2 from "@/components/SectionHeading/SectionHeading2";
 import Spacing from "@/components/Spacing/Spacing";
 import VideoModal from "@/components/VideoModal/VideoModal";
 import React from "react";
@@ -42,7 +41,7 @@ const Facturacion = () => {
           <SectionHeading
             title="Sistema de facturación web"
             subtitle="Servicios"
-            text="Es una herramienta digital que automatiza la emisión y gestión de comprobantes electrónicos, ayudando a reducir errores, costos y optimizando sus procesos administrativos."
+            text="Es una herramienta digital que automatiza la emisión y gestión de comprobantes electrónicos, ayudando <br/> a reducir errores, costos y optimizando sus procesos administrativos."
             variant="cs-style1 text-center"
           />
           <Spacing lg="180" md="40" />

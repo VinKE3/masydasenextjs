@@ -39,11 +39,8 @@ const PricingTable: React.FC<PricingTableProps> = ({
       <Div className="cs-pricing_info">
         <Div className="cs-price"></Div>
         <Div className="cs-gray_color">
-          {text}{" "}
-          <span
-            style={{}}
-            className="cs-gray_color text-uppercase cs-semi_bold"
-          >
+          {text}
+          <span className="cs-gray_color text-uppercase cs-semi_bold">
             {textUper}
           </span>
         </Div>
